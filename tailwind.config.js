@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        load: "loadAnimation .5s ease-out forwards",
+        slideLeft: "slideLeft .5s ease-in-out forwards",
+        slideRight: "slideRight .5s ease-in-out forwards",
       },
     },
   },
