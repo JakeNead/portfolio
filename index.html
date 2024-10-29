@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jake's Portfolio</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <header
+      class="bg-[#123456] h-[80vh] flex flex-col items-center justify-center text-slate-50 text-2xl"
+    >
+      <!-- theme toggle -->
+      <div class="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <title>light</title>
+          <path
+            stroke="rgb(248, 248, 255)"
+            strokeLinecap="round"
+            strokeMiterlimit="10"
+            strokeWidth="32"
+            d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            fill="none"
+            stroke="rgb(248, 248, 255)"
+            strokeLinecap="round"
+            strokeMiterlimit="10"
+            strokeWidth="32"
+          />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <title>dark</title>
+          <path
+            d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="32"
+          />
+        </svg>
+      </div>
+      <!-- end theme toggle -->
+      <h1 class="animate-left">
+        Hello! I'm
+        <span text-5xl>Jake</span>,
+      </h1>
+      <h1 class="animate-right">a full-stack software engineer.</h1>
+    </header>
+
+    <section class="bg-[#654321] p-5">
+      <h2>What drives me to create with code?</h2>
+      <p>
+        Motivated to make impactful changes, I find joy in making life easier to
+        navigate. I’ve always been curious about how things work, but even more
+        interested when things break down. Whether it's an internal server
+        error, a student not participating, or a malfunctioning door, I’m
+        compelled to learn more about the function of the behavior and how I can
+        make it work within a human-centered approach.
+      </p>
+    </section>
+
+    <section>
+      <div class="max-w-screen-lg mx-auto">
+        <h2
+          class="text-center pt-4 min-[500px]:text-xl sm:text-2xl md:text-3xl"
+        >
+          My Work
+        </h2>
+        <div class="flex flex-col md:flex-row">
+          <!-- project section -->
+          <!-- project 1 -->
+          <div class="flex flex-col items-center p-4 md:p-6">
+            <img
+              src="./assets/shopping-cart.png"
+              alt="shopping cart project screenshot"
+            />
+            <p class="w-4/5 py-6">
+              An online store featuring client side routing, unit testing, and
+              typescript.
+            </p>
+            <div class="flex justify-center gap-6">
+              <a href="https://github.com/JakeNead/shopping-cart">
+                <img
+                  src="./assets/github-mark-black.svg"
+                  alt="github shopping cart repo link"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a href="https://fakestore-9ut.pages.dev/">
+                <img
+                  src="./assets/live-view.svg"
+                  alt="live link to fake store project"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="flex flex-col items-center p-4 md:p-6">
+            <img src="./assets/memory-game.png" alt="memory game screenshot" />
+            <p class="w-4/5 py-6">
+              A fun challenge using the unslplash API and React to create a
+              memory card game.
+            </p>
+            <div class="flex justify-center gap-6">
+              <a href="https://github.com/JakeNead/memory-card">
+                <img
+                  src="./assets/github-mark-black.svg"
+                  alt="github memory card repo link"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a href="https://aquamarine-belekoy-2ce4a0.netlify.app/">
+                <img
+                  src="./assets/live-view.svg"
+                  alt="live link to fake store project"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="flex flex-col items-center p-4 md:p-6">
+            <img
+              src="./assets/resume-builder.png"
+              alt="resume builder screenshot"
+            />
+            <p class="w-4/5 py-6">
+              A responsive resume builder app with a custom theme toggle.
+            </p>
+            <div class="flex justify-center gap-6">
+              <a href="https://github.com/JakeNead/resume-builder">
+                <img
+                  src="./assets/github-mark-black.svg"
+                  alt="github resume builder repo link"
+                  class="w-6 h-6"
+                />
+              </a>
+              <a href="https://resume-builder-one-liart.vercel.app/">
+                <img
+                  src="./assets/live-view.svg"
+                  alt="live link to resume builder"
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- End of project section -->
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 text-9xl>About me</h2>
+      <p>
+        I’m based out of Seattle, WA and when not coding I can be found climbing
+        mountains, running, playing chess, tending to my bonsai, or building
+        custom hi-fi speakers!
+      </p>
+    </section>
+
+    <footer class="bg-[#abcdef] p-5 text-center">
+      <p class="p-8">Thank you for visiting my site!</p>
+      <div class="flex justify-center gap-6">
+        <a href="https://www.instagram.com/rabidswan/"
+          ><img
+            src="./assets/instagram.svg"
+            alt="instagram logo"
+            class="w-6 h-6"
+        /></a>
+        <a href="https://github.com/JakeNead"
+          ><img
+            src="./assets/github-mark-black.svg"
+            alt="github logo"
+            class="w-6 h-6"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
