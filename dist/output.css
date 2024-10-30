@@ -729,11 +729,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -867,6 +862,14 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-screen-lg {
@@ -1843,11 +1846,6 @@ video {
   border-style: none;
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-text_dark {
   --tw-border-opacity: 1;
   border-color: rgb(48 48 48 / var(--tw-border-opacity));
@@ -1865,12 +1863,17 @@ video {
 
 .bg-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(13 81 127 / var(--tw-bg-opacity));
+  background-color: rgb(61 111 163 / var(--tw-bg-opacity));
+}
+
+.bg-dark_grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 44 47 / var(--tw-bg-opacity));
 }
 
 .bg-light_grey {
   --tw-bg-opacity: 1;
-  background-color: rgb(235 235 235 / var(--tw-bg-opacity));
+  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1999,19 +2002,14 @@ video {
   padding: 2rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-4 {
@@ -2160,11 +2158,6 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
-.text-slate-50 {
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
-}
-
 .text-text_dark {
   --tw-text-opacity: 1;
   color: rgb(48 48 48 / var(--tw-text-opacity));
@@ -2173,6 +2166,11 @@ video {
 .text-text_light {
   --tw-text-opacity: 1;
   color: rgb(239 243 245 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2401,7 +2399,7 @@ video {
 }
 
 .ring-offset-blue {
-  --tw-ring-offset-color: rgb(13, 81, 127);
+  --tw-ring-offset-color: rgb(61, 111, 163);
 }
 
 .blur {
@@ -2570,11 +2568,11 @@ video {
 }
 
 .animate-left {
-  animation: slideLeft .5s ease-in-out forwards;
+  animation: slideLeft .7s cubic-bezier(0.33, 0.67, 0.31, 1) forwards;
 }
 
 .animate-right {
-  animation: slideRight .5s ease-in-out forwards;
+  animation: slideRight .7s  forwards cubic-bezier(0.33, 0.67, 0.31, 1);
 }
 
 @media (min-width: 640px) {
