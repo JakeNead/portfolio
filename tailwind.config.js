@@ -21,6 +21,9 @@ module.exports = {
         blue_gradient:
           "linear-gradient(180deg, rgba(9,92,148,1) 0%, rgba(235,235,235,1) 100%)",
       },
+      fontFamily: {
+        play: ["play", "sans-serif"],
+      },
     },
   },
   plugins: [],

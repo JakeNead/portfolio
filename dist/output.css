@@ -1846,14 +1846,14 @@ video {
   border-style: none;
 }
 
-.border-text_dark {
-  --tw-border-opacity: 1;
-  border-color: rgb(48 48 48 / var(--tw-border-opacity));
-}
-
 .border-text_light {
   --tw-border-opacity: 1;
   border-color: rgb(239 243 245 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -1869,11 +1869,6 @@ video {
 .bg-dark_grey {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 47 / var(--tw-bg-opacity));
-}
-
-.bg-light_grey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2072,6 +2067,10 @@ video {
   vertical-align: super;
 }
 
+.font-play {
+  font-family: play, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2079,6 +2078,11 @@ video {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -2573,6 +2577,16 @@ video {
 
 .animate-right {
   animation: slideRight .7s  forwards cubic-bezier(0.33, 0.67, 0.31, 1);
+}
+
+@font-face {
+  font-family: "play";
+
+  src: url("./assets/fonts/Play-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 @media (min-width: 640px) {

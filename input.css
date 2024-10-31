@@ -30,3 +30,10 @@
 .animate-right {
   @apply animate-slideRight;
 }
+
+@font-face {
+  font-family: "play";
+  src: url("./assets/fonts/Play-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
