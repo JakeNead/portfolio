@@ -38,6 +38,12 @@ module.exports = {
       fontFamily: {
         electrolize: ["Electrolize", "monospace"],
       },
+      fontSize: {
+        header: "2.25rem",
+        subheader: "2rem",
+        paragraph: "1.2rem",
+        description: "1.25rem",
+      },
     },
   },
   plugins: [],
