@@ -3,11 +3,25 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        // slideLeft: "slideLeft .5s ease-in-out forwards",
-        // slideRight: "slideRight .5s ease-in-out forwards",
-        slideLeft: "slideLeft .7s cubic-bezier(0.33, 0.67, 0.31, 1) forwards",
+        slideLeft: "slideLeft .7s forwards cubic-bezier(0.33, 0.67, 0.31, 1)",
         slideRight:
-          "slideRight .7s  forwards cubic-bezier(0.33, 0.67, 0.31, 1)",
+          "slideRight .7s forwards cubic-bezier(0.33, 0.67, 0.31, 1) .9s",
+        slideBottom:
+          "slideBottom .7s forwards cubic-bezier(0.33, 0.67, 0.31, 1) 1.9s",
+      },
+      keyframes: {
+        slideLeft: {
+          "0%": { opacity: "0", transform: "translateX(-100%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        slideRight: {
+          "0%": { opacity: "0", transform: "translateX(100%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        slideBottom: {
+          "0%": { opacity: "0", transform: "translateY(100%)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       colors: {
         blue: "rgb(61, 111, 163)",
@@ -22,7 +36,7 @@ module.exports = {
           "linear-gradient(180deg, rgba(9,92,148,1) 0%, rgba(235,235,235,1) 100%)",
       },
       fontFamily: {
-        play: ["play", "sans-serif"],
+        electrolize: ["Electrolize", "monospace"],
       },
     },
   },

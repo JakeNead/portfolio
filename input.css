@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,7 @@
 @keyframes slideLeft {
   from {
     opacity: 0;
-    transform: translateX(-80px);
+    transform: translateX(-100%);
   }
   to {
     opacity: 1;
@@ -15,25 +17,30 @@
 @keyframes slideRight {
   from {
     opacity: 0;
-    transform: translateX(80px);
+    transform: translateX(100%);
   }
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+@keyframes slideBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .animate-left {
   @apply animate-slideLeft;
 }
-
 .animate-right {
   @apply animate-slideRight;
 }
-
-@font-face {
-  font-family: "play";
-  src: url("./assets/fonts/Play-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.animate-bottom {
+  @apply animate-slideBottom;
 }
