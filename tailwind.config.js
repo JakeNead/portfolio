@@ -7,12 +7,12 @@ module.exports = {
         slideRight: 'slideRight .7s forwards cubic-bezier(0.33, 0.67, 0.31, 1) .5s',
         slideBottom: 'slideBottom .7s forwards cubic-bezier(0.33, 0.67, 0.31, 1) .9s',
         sunrise: 'sunrise 3s forwards ease-out',
-        backgroundCloud: 'cloud 35s linear infinite',
-        midgroundCloud: 'cloud 28s linear infinite',
-        foregroundCloud: 'cloud 21s linear infinite',
-        backgroundCloudSingle: 'cloudSingle 35s forwards linear ',
-        midgroundCloudSingle: 'cloudSingle 28s forwards linear',
-        foregroundCloudSingle: 'cloudSingle 21s forwards linear',
+        backgroundCloud: 'cloud 45s linear infinite',
+        midgroundCloud: 'cloud 37s linear infinite',
+        foregroundCloud: 'cloud 29s linear infinite',
+        backgroundCloudSingle: 'cloudSingle 45s forwards linear ',
+        midgroundCloudSingle: 'cloudSingle 37s forwards linear',
+        foregroundCloudSingle: 'cloudSingle 29s forwards linear',
       },
       keyframes: {
         slideLeft: {

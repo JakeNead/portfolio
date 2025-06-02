@@ -749,6 +749,18 @@ video {
   top: 17%;
 }
 
+.left-\[2\%\]{
+  left: 2%;
+}
+
+.-left-\[2\%\]{
+  left: -2%;
+}
+
+.-left-\[10\%\]{
+  left: -10%;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -763,10 +775,6 @@ video {
 
 .z-20{
   z-index: 20;
-}
-
-.z-0{
-  z-index: 0;
 }
 
 .float-start{
@@ -958,20 +966,8 @@ video {
   height: 100%;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.min-h-\[800px\]{
-  min-height: 800px;
-}
-
 .min-h-\[600px\]{
   min-height: 600px;
-}
-
-.min-h-\[500px\]{
-  min-height: 500px;
 }
 
 .w-48{
@@ -1101,7 +1097,7 @@ video {
 }
 
 .animate-backgroundCloud{
-  animation: cloud 35s linear infinite;
+  animation: cloud 45s linear infinite;
 }
 
 @keyframes cloudSingle{
@@ -1122,7 +1118,7 @@ video {
 }
 
 .animate-backgroundCloudSingle{
-  animation: cloudSingle 35s forwards linear;
+  animation: cloudSingle 45s forwards linear;
 }
 
 @keyframes cloud{
@@ -1136,7 +1132,7 @@ video {
 }
 
 .animate-foregroundCloud{
-  animation: cloud 21s linear infinite;
+  animation: cloud 29s linear infinite;
 }
 
 @keyframes cloudSingle{
@@ -1157,7 +1153,7 @@ video {
 }
 
 .animate-foregroundCloudSingle{
-  animation: cloudSingle 21s forwards linear;
+  animation: cloudSingle 29s forwards linear;
 }
 
 @keyframes cloud{
@@ -1171,7 +1167,7 @@ video {
 }
 
 .animate-midgroundCloud{
-  animation: cloud 28s linear infinite;
+  animation: cloud 37s linear infinite;
 }
 
 @keyframes cloudSingle{
@@ -1192,7 +1188,7 @@ video {
 }
 
 .animate-midgroundCloudSingle{
-  animation: cloudSingle 28s forwards linear;
+  animation: cloudSingle 37s forwards linear;
 }
 
 @keyframes slideBottom{
