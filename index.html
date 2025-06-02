@@ -6,15 +6,13 @@
     <meta name="description" content="Jake Nead's portfolio" />
     <title>Jake's Portfolio</title>
     <link rel="stylesheet" href="./dist/output.css" />
-
     <link rel="icon" type="image/svg+xml" href="assets/mountain.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
   </head>
   <body class="overflow-x-hidden bg-blue font-electrolize">
     <header
-      class="z-0 flex h-[80vh] flex-col items-center justify-center bg-blue p-4 text-center font-electrolize text-header text-text_dark xl:text-5xl"
+      class="flex h-[80vh] min-h-[800px] flex-col items-center justify-center p-4 pb-48 text-center font-electrolize text-header text-text_dark xl:text-5xl"
     >
-      <div class="relative flex flex-col items-center">
+      <div class="relative z-10 flex flex-col items-center">
         <h1 class="flex text-white">
           <span class="animate-slideLeft opacity-0">Hello! </span> &nbsp;<span
             class="animate-slideRight opacity-0 delay-100"
@@ -23,18 +21,103 @@
           >
         </h1>
         <h1 class="delay-800 animate-slideBottom text-white opacity-0">
-          a full-stack web developer.
+          a Full-Stack Web Developer.
         </h1>
+
         <div
-          class="absolute bottom-24 left-1/2 z-10 flex h-48 w-48 animate-sunrise items-center justify-center rounded-full bg-yellow-500 p-4"
+          class="absolute bottom-24 left-1/2 z-10 flex h-48 w-48 animate-sunrise items-center justify-center rounded-full bg-yellow-400 p-4"
         >
           <img class="h-full w-auto" src="./assets/headshot.webp" alt="Picture of Jake" />
         </div>
       </div>
     </header>
-    <div class="min-w-screen relative h-auto">
+    <div class="min-w-screen relative z-10 h-auto">
+      <!-- start background clouds -->
+      <!-- inifinite loop -->
+      <img
+        src="./assets/clouds/cloud1.svg"
+        class="z-1 animate-backgroundCloud absolute -left-1/3 top-[15%] w-[20vw]"
+        style="animation-delay: 1s"
+      />
+      <img
+        src="./assets/clouds/cloud2.svg"
+        class="z-1 animate-backgroundCloud absolute -left-1/3 top-[16%] w-[20vw]"
+        style="animation-delay: 3.5s"
+      />
+      <img
+        src="./assets/clouds/cloud3.svg"
+        class="z-1 animate-backgroundCloud absolute -left-1/3 top-[17%] w-[20vw]"
+        style="animation-delay: 8s"
+      />
+      <!-- single loop -->
+      <img
+        src="./assets/clouds/cloud1.svg"
+        class="z-1 animate-backgroundCloudSingle absolute left-[6%] top-[15%] w-[20vw]"
+      />
+      <img
+        src="./assets/clouds/cloud2.svg"
+        class="z-1 animate-backgroundCloudSingle absolute left-[40%] top-[16%] w-[20vw]"
+      />
+      <img
+        src="./assets/clouds/cloud3.svg"
+        class="z-1 animate-backgroundCloudSingle absolute right-[10%] top-[17%] w-[20vw]"
+      />
+      <!-- end background clouds -->
+      <!-- start midground clouds -->
+      <!-- infinite -->
+      <img
+        src="./assets/clouds/cloud7.svg"
+        class="animate-midgroundCloud absolute -left-1/3 -top-[2%] z-10 w-[25vw]"
+        style="animation-delay: 3s"
+      />
+      <img
+        src="./assets/clouds/cloud8.svg"
+        class="animate-midgroundCloud absolute -left-1/3 -top-[5%] z-10 w-[25vw]"
+        style="animation-delay: 7.5s"
+      />
+      <!-- single loop -->
+      <img
+        src="./assets/clouds/cloud7.svg"
+        class="animate-midgroundCloudSingle absolute -top-[2%] left-[20%] z-10 w-[25vw]"
+      />
+      <img
+        src="./assets/clouds/cloud8.svg"
+        class="animate-midgroundCloudSingle absolute -top-[5%] right-[20%] z-10 w-[25vw]"
+      />
+      <!-- end midground clouds -->
+      <!-- start foreground clouds -->
+      <!-- infinite loop -->
+      <img
+        src="./assets/clouds/cloud4.svg"
+        class="animate-foregroundCloud absolute -left-1/3 -top-[10%] z-10 w-[30vw]"
+        style="animation-delay: 0s"
+      />
+      <img
+        src="./assets/clouds/cloud5.svg"
+        class="animate-foregroundCloud absolute -left-1/3 -top-[10%] z-10 w-[30vw]"
+        style="animation-delay: 3s"
+      />
+      <img
+        src="./assets/clouds/cloud6.svg"
+        class="animate-foregroundCloud absolute -left-1/2 -top-[20%] z-10 w-[40vw]"
+        style="animation-delay: 7s"
+      />
+      <!-- single loop -->
+      <img
+        src="./assets/clouds/cloud4.svg"
+        class="animate-foregroundCloudSingle absolute -top-[10%] left-[19%] z-10 w-[30vw]"
+      />
+      <img
+        src="./assets/clouds/cloud5.svg"
+        class="animate-foregroundCloudSingle absolute -top-[10%] right-[28%] z-10 w-[30vw]"
+      />
+      <img
+        src="./assets/clouds/cloud6.svg"
+        class="animate-foregroundCloudSingle absolute -top-[20%] right-0 z-10 w-[40vw]"
+      />
+      <!-- end foreground clouds -->
       <svg
-        class="relative z-20"
+        class="z-3 relative"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         id="visual"
