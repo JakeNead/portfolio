@@ -8,429 +8,436 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <link rel="icon" type="image/svg+xml" href="assets/mountain.svg" />
   </head>
-  <body class="overflow-x-hidden bg-blue font-electrolize">
-    <header
-      class="flex h-[80vh] min-h-[800px] flex-col items-center justify-center p-4 pb-48 text-center font-electrolize text-header text-text_dark xl:text-5xl"
-    >
-      <div class="relative z-10 flex flex-col items-center">
-        <h1 class="flex text-white">
-          <span class="animate-slideLeft opacity-0">Hello! </span> &nbsp;<span
-            class="animate-slideRight opacity-0 delay-100"
-          >
-            I'm Jake,</span
-          >
-        </h1>
-        <h1 class="delay-800 animate-slideBottom text-white opacity-0">
-          a Full-Stack Web Developer.
-        </h1>
-
-        <div
-          class="absolute bottom-24 left-1/2 z-10 flex h-48 w-48 animate-sunrise items-center justify-center rounded-full bg-yellow-400 p-4"
-        >
-          <img class="h-full w-auto" src="./assets/headshot.webp" alt="Picture of Jake" />
-        </div>
-      </div>
-    </header>
-    <div class="min-w-screen relative z-10 h-auto">
-      <!-- start background clouds -->
-      <!-- inifinite loop -->
-      <img
-        src="./assets/clouds/cloud1.svg"
-        class="z-1 animate-backgroundCloud absolute -left-1/3 top-[15%] w-[20vw]"
-        style="animation-delay: 1s"
-      />
-      <img
-        src="./assets/clouds/cloud2.svg"
-        class="z-1 animate-backgroundCloud absolute -left-1/3 top-[16%] w-[20vw]"
-        style="animation-delay: 3.5s"
-      />
-      <img
-        src="./assets/clouds/cloud3.svg"
-        class="z-1 animate-backgroundCloud absolute -left-1/3 top-[17%] w-[20vw]"
-        style="animation-delay: 8s"
-      />
-      <!-- single loop -->
-      <img
-        src="./assets/clouds/cloud1.svg"
-        class="z-1 animate-backgroundCloudSingle absolute left-[6%] top-[15%] w-[20vw]"
-      />
-      <img
-        src="./assets/clouds/cloud2.svg"
-        class="z-1 animate-backgroundCloudSingle absolute left-[40%] top-[16%] w-[20vw]"
-      />
-      <img
-        src="./assets/clouds/cloud3.svg"
-        class="z-1 animate-backgroundCloudSingle absolute right-[10%] top-[17%] w-[20vw]"
-      />
-      <!-- end background clouds -->
-      <!-- start midground clouds -->
-      <!-- infinite -->
-      <img
-        src="./assets/clouds/cloud7.svg"
-        class="animate-midgroundCloud absolute -left-1/3 -top-[2%] z-10 w-[25vw]"
-        style="animation-delay: 3s"
-      />
-      <img
-        src="./assets/clouds/cloud8.svg"
-        class="animate-midgroundCloud absolute -left-1/3 -top-[5%] z-10 w-[25vw]"
-        style="animation-delay: 7.5s"
-      />
-      <!-- single loop -->
-      <img
-        src="./assets/clouds/cloud7.svg"
-        class="animate-midgroundCloudSingle absolute -top-[2%] left-[20%] z-10 w-[25vw]"
-      />
-      <img
-        src="./assets/clouds/cloud8.svg"
-        class="animate-midgroundCloudSingle absolute -top-[5%] right-[20%] z-10 w-[25vw]"
-      />
-      <!-- end midground clouds -->
-      <!-- start foreground clouds -->
-      <!-- infinite loop -->
-      <img
-        src="./assets/clouds/cloud4.svg"
-        class="animate-foregroundCloud absolute -left-1/3 -top-[10%] z-10 w-[30vw]"
-        style="animation-delay: 0s"
-      />
-      <img
-        src="./assets/clouds/cloud5.svg"
-        class="animate-foregroundCloud absolute -left-1/3 -top-[10%] z-10 w-[30vw]"
-        style="animation-delay: 3s"
-      />
-      <img
-        src="./assets/clouds/cloud6.svg"
-        class="animate-foregroundCloud absolute -left-1/2 -top-[20%] z-10 w-[40vw]"
-        style="animation-delay: 7s"
-      />
-      <!-- single loop -->
-      <img
-        src="./assets/clouds/cloud4.svg"
-        class="animate-foregroundCloudSingle absolute -top-[10%] left-[19%] z-10 w-[30vw]"
-      />
-      <img
-        src="./assets/clouds/cloud5.svg"
-        class="animate-foregroundCloudSingle absolute -top-[10%] right-[28%] z-10 w-[30vw]"
-      />
-      <img
-        src="./assets/clouds/cloud6.svg"
-        class="animate-foregroundCloudSingle absolute -top-[20%] right-0 z-10 w-[40vw]"
-      />
-      <!-- end foreground clouds -->
-      <svg
-        class="z-3 relative"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        id="visual"
-        viewBox="0 0 1200 200"
-        version="1.1"
+  <body class="bg-blue font-electrolize">
+    <div class="overflow-x-hidden">
+      <header
+        class="flex h-[80vh] min-h-[800px] flex-col items-center justify-center p-4 pb-48 text-center font-electrolize text-header text-text_dark xl:text-5xl"
       >
-        <rect
-          x="0"
-          y="0"
-          width="1200"
-          height="200"
-          fill="rgba(255, 255, 255, 0)"
-          class="relative w-full flex-grow"
-        />
-        <path
-          d="M0 66L71 84L141 121L212 82L282 88L353 97L424 95L494 74L565 106L635 83L706 35L776 53L847 85L918 71L988 92L1059 73L1129 104L1200 96L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#b9b9b9"
-        />
-        <path
-          class="relative z-20"
-          d="M0 95L71 64L141 51L212 55L282 110L353 50L424 116L494 105L565 123L635 133L706 99L776 99L847 69L918 63L988 110L1059 130L1129 51L1200 109L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#a9a9aa"
-        />
-        <path
-          d="M0 137L71 90L141 81L212 96L282 112L353 76L424 68L494 115L565 101L635 91L706 131L776 96L847 135L918 71L988 85L1059 84L1129 114L1200 64L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#9a9a9b"
-        />
-        <path
-          d="M0 75L71 88L141 91L212 114L282 134L353 147L424 83L494 87L565 103L635 87L706 138L776 100L847 133L918 110L988 140L1059 112L1129 89L1200 138L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#8b8b8c"
-        />
-        <path
-          d="M0 89L71 114L141 117L212 119L282 100L353 136L424 93L494 107L565 107L635 140L706 139L776 154L847 137L918 147L988 111L1059 141L1129 146L1200 101L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#7c7c7e"
-        />
-        <path
-          d="M0 134L71 147L141 132L212 115L282 120L353 140L424 103L494 114L565 151L635 118L706 152L776 152L847 103L918 115L988 138L1059 115L1129 152L1200 123L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#6e6e70"
-        />
-        <path
-          d="M0 136L71 137L141 159L212 145L282 150L353 135L424 142L494 123L565 125L635 153L706 131L776 163L847 124L918 149L988 151L1059 150L1129 135L1200 150L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#606062"
-        />
-        <path
-          d="M0 162L71 146L141 141L212 147L282 134L353 138L424 163L494 165L565 153L635 154L706 165L776 168L847 158L918 175L988 162L1059 153L1129 158L1200 154L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#525255"
-        />
-        <path
-          d="M0 171L71 178L141 178L212 180L282 155L353 164L424 159L494 178L565 177L635 168L706 182L776 161L847 179L918 144L988 147L1059 147L1129 158L1200 172L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#454548"
-        />
-        <path
-          d="M0 164L71 159L141 170L212 165L282 176L353 179L424 188L494 160L565 186L635 183L706 166L776 175L847 184L918 161L988 183L1059 185L1129 177L1200 160L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#38383b"
-        />
-        <path
-          d="M0 177L71 192L141 183L212 187L282 193L353 190L424 184L494 185L565 180L635 192L706 196L776 184L847 192L918 185L988 194L1059 187L1129 194L1200 174L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
-          fill="#2c2c2f"
-        />
-      </svg>
-    </div>
+        <div class="relative z-10 flex flex-col items-center">
+          <h1 class="flex text-white">
+            <span class="animate-slideLeft opacity-0">Hello! </span> &nbsp;<span
+              class="animate-slideRight opacity-0 delay-100"
+            >
+              I'm Jake,</span
+            >
+          </h1>
+          <h1 class="delay-800 animate-slideBottom text-white opacity-0">
+            a Full-Stack Web Developer.
+          </h1>
 
-    <section class="relative z-20 mx-auto bg-dark_grey p-5 py-16 text-text_light">
-      <div class="spa mx-auto max-w-screen-md space-y-6">
-        <h2 class="text-subheader">About me</h2>
-        <div class="my-4 w-[30%] border-b-2 border-text_light"></div>
-        <p class="mx-auto max-w-screen-md text-paragraph">
-          I’m a full-stack web developer with a background in education and accessibility. Before
-          coding, I worked with neurodivergent students, designing systems that built confidence and
-          connection, an approach I carry into my development work. I use modern tools like Next.js
-          to solve real-world problems, focusing on intuitive interfaces and inclusive design.
-          Whether streamlining workflows or debugging a stubborn UI issue, I’m driven by curiosity,
-          empathy, and a desire to make things work better for real people. I’m currently looking
-          for opportunities where I can collaborate on thoughtful, user-centered products and grow
-          as a developer alongside a supportive team.
-        </p>
-        <p class="mx-auto max-w-screen-md text-paragraph">
-          I'm based out of Seattle, WA and when not coding I can be found climbing mountains,
-          running, playing chess, tending to my bonsai, or building custom hi-fi speakers!
-        </p>
-      </div>
-    </section>
-
-    <section class="min-w-screen relative z-20 bg-dark_grey">
-      <div class="mx-auto max-w-screen-lg p-6 text-text_light">
-        <h2 class="py-4 text-center text-subheader">My Work</h2>
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-          <!-- project 1 -->
-          <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
-            <img
-              src="./assets/smileWorks.webp"
-              alt="SmileWorks project screenshot"
-              class="rounded-md"
-            />
-            <div class="flex justify-center">
-              <a
-                href="https://github.com/Team-D-and-J/smile_works_app_ui"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/github-mark-white.svg"
-                  alt="github SmileWorks repo link"
-                  class="h-6 w-6"
-                />
-              </a>
-            </div>
-            <p class="text-center">A full-stack dental clinic management platform.</p>
-          </div>
-          <!-- project 2 -->
-          <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
-            <img
-              src="./assets/mtn-sense-dark.webp"
-              alt="mountain sense project screenshot"
-              class="rounded-md"
-            />
-            <div class="flex justify-center gap-6">
-              <a
-                href="https://github.com/JakeNead/mtnsense"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/github-mark-white.svg"
-                  alt="mountain sense repo link"
-                  class="h-6 w-6"
-                />
-              </a>
-              <a
-                href="https://mtnsense-forecasts.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/live-view.svg"
-                  alt="live link to mountain sense project"
-                  class="h-6 w-6"
-                />
-              </a>
-            </div>
-            <p class="text-center">
-              Quickly view avalanche and weather conditions for backcountry users.
-            </p>
-          </div>
-
-          <!-- project 3 -->
-          <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
-            <img
-              src="./assets/techTrove.webp"
-              alt="techTrove project screenshot"
-              class="rounded-md"
-            />
-            <div class="flex justify-center gap-6">
-              <a
-                href="https://github.com/JakeNead/shopping-cart"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/github-mark-white.svg"
-                  alt="github tech trove repo link"
-                  class="h-6 w-6"
-                />
-              </a>
-              <a href="https://fakestore-9ut.pages.dev/" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="./assets/live-view.svg"
-                  alt="live link to tech trove project"
-                  class="h-6 w-6"
-                />
-              </a>
-            </div>
-            <p class="text-center">
-              An online store featuring client-side routing, unit testing, and typescript.
-            </p>
-          </div>
-
-          <!-- project 4 -->
-          <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
-            <img src="./assets/memoryGame.webp" alt="memory game screenshot" class="rounded-md" />
-            <div class="flex justify-center gap-6">
-              <a
-                href="https://github.com/JakeNead/memory-card"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/github-mark-white.svg"
-                  alt="github memory card repo link"
-                  class="h-6 w-6"
-                />
-              </a>
-              <a
-                href="https://aquamarine-belekoy-2ce4a0.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/live-view.svg"
-                  alt="live link to memory game project"
-                  class="h-6 w-6"
-                />
-              </a>
-            </div>
-            <p class="text-center">
-              A fun challenge using the unsplash API and React to create a memory card game.
-            </p>
-          </div>
-
-          <!-- project 5 -->
-          <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
-            <img
-              src="./assets/resumeBuilder.webp"
-              alt="resume builder screenshot"
-              class="rounded-md"
-            />
-            <div class="flex justify-center gap-6">
-              <a
-                href="https://github.com/JakeNead/resume-builder"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/github-mark-white.svg"
-                  alt="github resume builder repo link"
-                  class="h-6 w-6"
-                />
-              </a>
-              <a
-                href="https://resume-builder-one-liart.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/live-view.svg"
-                  alt="live link to resume builder"
-                  class="h-6 w-6"
-                />
-              </a>
-            </div>
-            <p class="text-center">A responsive resume builder app with a custom theme toggle.</p>
-          </div>
-          <!-- project 6 -->
-          <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
-            <img src="./assets/portfolio.webp" alt="portfolio screenshot" class="rounded-md" />
-            <div class="flex justify-center gap-6">
-              <a
-                href="https://github.com/JakeNead/portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./assets/github-mark-white.svg"
-                  alt="github portfolio repo link"
-                  class="h-6 w-6"
-                />
-              </a>
-            </div>
-            <p class="text-center">This site!</p>
+          <div
+            class="absolute bottom-24 left-1/2 z-10 flex h-48 w-48 animate-sunrise items-center justify-center rounded-full bg-yellow-400 p-4"
+          >
+            <img class="h-full w-auto" src="./assets/headshot.webp" alt="Picture of Jake" />
           </div>
         </div>
+      </header>
+      <div class="relative z-10 h-auto w-full">
+        <!-- start background clouds -->
+        <!-- inifinite loop -->
+        <img
+          src="./assets/clouds/cloud1.svg"
+          class="z-1 animate-backgroundCloud absolute -left-1/3 top-[15%] w-[20vw]"
+          style="animation-delay: 1s"
+        />
+        <img
+          src="./assets/clouds/cloud2.svg"
+          class="z-1 animate-backgroundCloud absolute -left-1/3 top-[16%] w-[20vw]"
+          style="animation-delay: 3.5s"
+        />
+        <img
+          src="./assets/clouds/cloud3.svg"
+          class="z-1 animate-backgroundCloud absolute -left-1/3 top-[17%] w-[20vw]"
+          style="animation-delay: 8s"
+        />
+        <!-- single loop -->
+        <img
+          src="./assets/clouds/cloud1.svg"
+          class="z-1 animate-backgroundCloudSingle absolute left-[6%] top-[15%] w-[20vw]"
+        />
+        <img
+          src="./assets/clouds/cloud2.svg"
+          class="z-1 animate-backgroundCloudSingle absolute left-[40%] top-[16%] w-[20vw]"
+        />
+        <img
+          src="./assets/clouds/cloud3.svg"
+          class="z-1 animate-backgroundCloudSingle absolute right-[10%] top-[17%] w-[20vw]"
+        />
+        <!-- end background clouds -->
+        <!-- start midground clouds -->
+        <!-- infinite -->
+        <img
+          src="./assets/clouds/cloud7.svg"
+          class="animate-midgroundCloud absolute -left-1/3 -top-[2%] z-10 w-[25vw]"
+          style="animation-delay: 3s"
+        />
+        <img
+          src="./assets/clouds/cloud8.svg"
+          class="animate-midgroundCloud absolute -left-1/3 -top-[5%] z-10 w-[25vw]"
+          style="animation-delay: 7.5s"
+        />
+        <!-- single loop -->
+        <img
+          src="./assets/clouds/cloud7.svg"
+          class="animate-midgroundCloudSingle absolute -top-[2%] left-[20%] z-10 w-[25vw]"
+        />
+        <img
+          src="./assets/clouds/cloud8.svg"
+          class="animate-midgroundCloudSingle absolute -top-[5%] right-[20%] z-10 w-[25vw]"
+        />
+        <!-- end midground clouds -->
+        <!-- start foreground clouds -->
+        <!-- infinite loop -->
+        <img
+          src="./assets/clouds/cloud4.svg"
+          class="animate-foregroundCloud absolute -left-1/3 -top-[10%] z-10 w-[30vw]"
+          style="animation-delay: 0s"
+        />
+        <img
+          src="./assets/clouds/cloud5.svg"
+          class="animate-foregroundCloud absolute -left-1/3 -top-[10%] z-10 w-[30vw]"
+          style="animation-delay: 3s"
+        />
+        <img
+          src="./assets/clouds/cloud6.svg"
+          class="animate-foregroundCloud absolute -left-1/2 -top-[20%] z-10 w-[40vw]"
+          style="animation-delay: 7s"
+        />
+        <!-- single loop -->
+        <img
+          src="./assets/clouds/cloud4.svg"
+          class="animate-foregroundCloudSingle absolute -top-[10%] left-[19%] z-10 w-[30vw]"
+        />
+        <img
+          src="./assets/clouds/cloud5.svg"
+          class="animate-foregroundCloudSingle absolute -top-[10%] right-[28%] z-10 w-[30vw]"
+        />
+        <img
+          src="./assets/clouds/cloud6.svg"
+          class="animate-foregroundCloudSingle absolute -top-[20%] right-0 z-10 w-[40vw]"
+        />
+        <!-- end foreground clouds -->
+        <svg
+          class="z-3 relative"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          id="visual"
+          viewBox="0 0 1200 200"
+          version="1.1"
+        >
+          <rect
+            x="0"
+            y="0"
+            width="1200"
+            height="200"
+            fill="rgba(255, 255, 255, 0)"
+            class="relative w-full flex-grow"
+          />
+          <path
+            d="M0 66L71 84L141 121L212 82L282 88L353 97L424 95L494 74L565 106L635 83L706 35L776 53L847 85L918 71L988 92L1059 73L1129 104L1200 96L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#b9b9b9"
+          />
+          <path
+            class="relative z-20"
+            d="M0 95L71 64L141 51L212 55L282 110L353 50L424 116L494 105L565 123L635 133L706 99L776 99L847 69L918 63L988 110L1059 130L1129 51L1200 109L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#a9a9aa"
+          />
+          <path
+            d="M0 137L71 90L141 81L212 96L282 112L353 76L424 68L494 115L565 101L635 91L706 131L776 96L847 135L918 71L988 85L1059 84L1129 114L1200 64L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#9a9a9b"
+          />
+          <path
+            d="M0 75L71 88L141 91L212 114L282 134L353 147L424 83L494 87L565 103L635 87L706 138L776 100L847 133L918 110L988 140L1059 112L1129 89L1200 138L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#8b8b8c"
+          />
+          <path
+            d="M0 89L71 114L141 117L212 119L282 100L353 136L424 93L494 107L565 107L635 140L706 139L776 154L847 137L918 147L988 111L1059 141L1129 146L1200 101L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#7c7c7e"
+          />
+          <path
+            d="M0 134L71 147L141 132L212 115L282 120L353 140L424 103L494 114L565 151L635 118L706 152L776 152L847 103L918 115L988 138L1059 115L1129 152L1200 123L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#6e6e70"
+          />
+          <path
+            d="M0 136L71 137L141 159L212 145L282 150L353 135L424 142L494 123L565 125L635 153L706 131L776 163L847 124L918 149L988 151L1059 150L1129 135L1200 150L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#606062"
+          />
+          <path
+            d="M0 162L71 146L141 141L212 147L282 134L353 138L424 163L494 165L565 153L635 154L706 165L776 168L847 158L918 175L988 162L1059 153L1129 158L1200 154L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#525255"
+          />
+          <path
+            d="M0 171L71 178L141 178L212 180L282 155L353 164L424 159L494 178L565 177L635 168L706 182L776 161L847 179L918 144L988 147L1059 147L1129 158L1200 172L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#454548"
+          />
+          <path
+            d="M0 164L71 159L141 170L212 165L282 176L353 179L424 188L494 160L565 186L635 183L706 166L776 175L847 184L918 161L988 183L1059 185L1129 177L1200 160L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#38383b"
+          />
+          <path
+            d="M0 177L71 192L141 183L212 187L282 193L353 190L424 184L494 185L565 180L635 192L706 196L776 184L847 192L918 185L988 194L1059 187L1129 194L1200 174L1200 201L1129 201L1059 201L988 201L918 201L847 201L776 201L706 201L635 201L565 201L494 201L424 201L353 201L282 201L212 201L141 201L71 201L0 201Z"
+            fill="#2c2c2f"
+          />
+        </svg>
       </div>
-    </section>
-    <section class="relative z-20 bg-dark_grey p-5 py-16 text-text_dark">
-      <div class="mx-auto max-w-screen-md space-y-6 text-white">
-        <h2 class="text-subheader">What drives me to create with code?</h2>
-        <div class="my-4 w-[30%] border-b-2 border-white"></div>
-        <p class="text-paragraph">
-          I’m driven by a simple joy: making life easier to navigate. Whether it’s a tangled
-          interface, a loose doorknob, or a student who just isn’t engaging, I’m drawn to
-          breakdowns, not just to fix them, but to understand them. What’s not working here? What’s
-          underneath this friction? And how can we build something better for real people?
-        </p>
-        <p class="text-paragraph">
-          That curiosity is what led me to build MtnSense Forecasts, a custom tool for a mountain
-          guide who was juggling weather forecasts, message boards, and avalanche reports across a
-          messy spreadsheet. I designed a single-page interface that brought all that data together,
-          turning a clunky process into a smooth experience for both him and his clients, especially
-          those new to backcountry travel.
-        </p>
-        <p class="text-paragraph">
-          On SmileWorks, a dental management app I helped develop, I hunted down a tricky
-          client-side rendering bug that left a gap in the nav bar. It was subtle, but solving it
-          meant a uniform, cleaner interface, the kind of fix that feels invisible, but makes a big
-          difference.
-        </p>
-        <p class="text-paragraph">
-          My approach is grounded in human-centered design, shaped by years of working with
-          neurodivergent individuals. I’ve seen how the right structure or small adjustment can open
-          up access, confidence, and connection. We don’t always need to reinvent the wheel, but
-          when we truly understand who we’re building for, we can create flexible, inclusive
-          solutions that help more people succeed.
-        </p>
-        <p class="text-paragraph">
-          At my core, I’m a fixer and a connector. I like making things work better, reach further,
-          and help more. Code just happens to be one of the best tools I’ve found for that.
-        </p>
-      </div>
-    </section>
 
-    <footer class="bg-light_grey p-5 text-center">
-      <p class="p-8 text-white">Thanks for stopping by!</p>
-      <div class="flex justify-center gap-6">
-        <a href="https://www.instagram.com/rabidswan/" target="_blank" rel="noopener noreferrer"
-          ><img src="./assets/instagram2.svg" alt="instagram logo" class="h-6 w-6 text-white"
-        /></a>
-        <a href="https://github.com/JakeNead" target="_blank" rel="noopener noreferrer"
-          ><img src="./assets/github-mark-white.svg" alt="github logo" class="h-6 w-6"
-        /></a>
-        <a href="https://www.linkedin.com/in/jakenead/" target="_blank" rel="noopener noreferrer"
-          ><img src="./assets/linkedin-white.svg" alt="linkedin logo" class="h-6 w-6 text-white"
-        /></a>
-      </div>
-    </footer>
+      <section class="relative z-20 mx-auto bg-dark_grey p-5 py-16 text-text_light">
+        <div class="spa mx-auto max-w-screen-md space-y-6">
+          <h2 class="text-subheader">About me</h2>
+          <div class="my-4 w-[30%] border-b-2 border-text_light"></div>
+          <p class="mx-auto max-w-screen-md text-paragraph">
+            I’m a full-stack web developer with a background in education and accessibility. Before
+            coding, I worked with neurodivergent students, designing systems that built confidence
+            and connection, an approach I carry into my development work. I use modern tools like
+            Next.js to solve real-world problems, focusing on intuitive interfaces and inclusive
+            design. Whether streamlining workflows or debugging a stubborn UI issue, I’m driven by
+            curiosity, empathy, and a desire to make things work better for real people. I’m
+            currently looking for opportunities where I can collaborate on thoughtful, user-centered
+            products and grow as a developer alongside a supportive team.
+          </p>
+          <p class="mx-auto max-w-screen-md text-paragraph">
+            I'm based out of Seattle, WA and when not coding I can be found climbing mountains,
+            running, playing chess, tending to my bonsai, or building custom hi-fi speakers!
+          </p>
+        </div>
+      </section>
+
+      <section class="relative z-20 w-full bg-dark_grey">
+        <div class="mx-auto max-w-screen-lg p-6 text-text_light">
+          <h2 class="py-4 text-center text-subheader">My Work</h2>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <!-- project 1 -->
+            <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
+              <img
+                src="./assets/smileWorks.webp"
+                alt="SmileWorks project screenshot"
+                class="rounded-md"
+              />
+              <div class="flex justify-center">
+                <a
+                  href="https://github.com/Team-D-and-J/smile_works_app_ui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-mark-white.svg"
+                    alt="github SmileWorks repo link"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </div>
+              <p class="text-center">A full-stack dental clinic management platform.</p>
+            </div>
+            <!-- project 2 -->
+            <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
+              <img
+                src="./assets/mtn-sense-dark.webp"
+                alt="mountain sense project screenshot"
+                class="rounded-md"
+              />
+              <div class="flex justify-center gap-6">
+                <a
+                  href="https://github.com/JakeNead/mtnsense"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-mark-white.svg"
+                    alt="mountain sense repo link"
+                    class="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href="https://mtnsense-forecasts.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/live-view.svg"
+                    alt="live link to mountain sense project"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </div>
+              <p class="text-center">
+                Quickly view avalanche and weather conditions for backcountry users.
+              </p>
+            </div>
+
+            <!-- project 3 -->
+            <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
+              <img
+                src="./assets/techTrove.webp"
+                alt="techTrove project screenshot"
+                class="rounded-md"
+              />
+              <div class="flex justify-center gap-6">
+                <a
+                  href="https://github.com/JakeNead/shopping-cart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-mark-white.svg"
+                    alt="github tech trove repo link"
+                    class="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href="https://fakestore-9ut.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/live-view.svg"
+                    alt="live link to tech trove project"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </div>
+              <p class="text-center">
+                An online store featuring client-side routing, unit testing, and typescript.
+              </p>
+            </div>
+
+            <!-- project 4 -->
+            <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
+              <img src="./assets/memoryGame.webp" alt="memory game screenshot" class="rounded-md" />
+              <div class="flex justify-center gap-6">
+                <a
+                  href="https://github.com/JakeNead/memory-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-mark-white.svg"
+                    alt="github memory card repo link"
+                    class="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href="https://aquamarine-belekoy-2ce4a0.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/live-view.svg"
+                    alt="live link to memory game project"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </div>
+              <p class="text-center">
+                A fun challenge using the unsplash API and React to create a memory card game.
+              </p>
+            </div>
+
+            <!-- project 5 -->
+            <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
+              <img
+                src="./assets/resumeBuilder.webp"
+                alt="resume builder screenshot"
+                class="rounded-md"
+              />
+              <div class="flex justify-center gap-6">
+                <a
+                  href="https://github.com/JakeNead/resume-builder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-mark-white.svg"
+                    alt="github resume builder repo link"
+                    class="h-6 w-6"
+                  />
+                </a>
+                <a
+                  href="https://resume-builder-one-liart.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/live-view.svg"
+                    alt="live link to resume builder"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </div>
+              <p class="text-center">A responsive resume builder app with a custom theme toggle.</p>
+            </div>
+            <!-- project 6 -->
+            <div class="flex flex-col items-center gap-3 rounded-lg bg-light_grey p-3 lg:p-6">
+              <img src="./assets/portfolio.webp" alt="portfolio screenshot" class="rounded-md" />
+              <div class="flex justify-center gap-6">
+                <a
+                  href="https://github.com/JakeNead/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/github-mark-white.svg"
+                    alt="github portfolio repo link"
+                    class="h-6 w-6"
+                  />
+                </a>
+              </div>
+              <p class="text-center">This site!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative z-20 bg-dark_grey p-5 py-16 text-text_dark">
+        <div class="mx-auto max-w-screen-md space-y-6 text-white">
+          <h2 class="text-subheader">What drives me to create with code?</h2>
+          <div class="my-4 w-[30%] border-b-2 border-white"></div>
+          <p class="text-paragraph">
+            I’m driven by a simple joy: making life easier to navigate. Whether it’s a tangled
+            interface, a loose doorknob, or a student who just isn’t engaging, I’m drawn to
+            breakdowns, not just to fix them, but to understand them. What’s not working here?
+            What’s underneath this friction? And how can we build something better for real people?
+          </p>
+          <p class="text-paragraph">
+            That curiosity is what led me to build MtnSense Forecasts, a custom tool for a mountain
+            guide who was juggling weather forecasts, message boards, and avalanche reports across a
+            messy spreadsheet. I designed a single-page interface that brought all that data
+            together, turning a clunky process into a smooth experience for both him and his
+            clients, especially those new to backcountry travel.
+          </p>
+          <p class="text-paragraph">
+            On SmileWorks, a dental management app I helped develop, I hunted down a tricky
+            client-side rendering bug that left a gap in the nav bar. It was subtle, but solving it
+            meant a uniform, cleaner interface, the kind of fix that feels invisible, but makes a
+            big difference.
+          </p>
+          <p class="text-paragraph">
+            My approach is grounded in human-centered design, shaped by years of working with
+            neurodivergent individuals. I’ve seen how the right structure or small adjustment can
+            open up access, confidence, and connection. We don’t always need to reinvent the wheel,
+            but when we truly understand who we’re building for, we can create flexible, inclusive
+            solutions that help more people succeed.
+          </p>
+          <p class="text-paragraph">
+            At my core, I’m a fixer and a connector. I like making things work better, reach
+            further, and help more. Code just happens to be one of the best tools I’ve found for
+            that.
+          </p>
+        </div>
+      </section>
+
+      <footer class="bg-light_grey p-5 text-center">
+        <p class="p-8 text-white">Thanks for stopping by!</p>
+        <div class="flex justify-center gap-6">
+          <a href="https://www.instagram.com/rabidswan/" target="_blank" rel="noopener noreferrer"
+            ><img src="./assets/instagram2.svg" alt="instagram logo" class="h-6 w-6 text-white"
+          /></a>
+          <a href="https://github.com/JakeNead" target="_blank" rel="noopener noreferrer"
+            ><img src="./assets/github-mark-white.svg" alt="github logo" class="h-6 w-6"
+          /></a>
+          <a href="https://www.linkedin.com/in/jakenead/" target="_blank" rel="noopener noreferrer"
+            ><img src="./assets/linkedin-white.svg" alt="linkedin logo" class="h-6 w-6 text-white"
+          /></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

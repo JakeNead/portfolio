@@ -33,12 +33,12 @@ module.exports = {
         },
         cloud: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(180vw)' },
+          '100%': { transform: 'translateX(140vw)' },
         },
         cloudSingle: {
           '0%': { opacity: '1', transform: 'translateX(0)' },
-          '99%': { opacity: '1', transform: 'translateX(180vw)' },
-          '100%': { opacity: '0', transform: 'translateX(180vw)' },
+          '99%': { opacity: '1', transform: 'translateX(140vw)' },
+          '100%': { opacity: '0', transform: 'translateX(140vw)' },
         },
       },
       colors: {
