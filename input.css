@@ -3,16 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @keyframes sunrise {
-  from {
-    transform: translate(-50%, 300px);
-  }
-  to {
-    transform: translate(-50%, 0px);
-  }
-}
-
-.animateSunrise {
-  animation: sunrise 10s ease-out forwards;
-} */
